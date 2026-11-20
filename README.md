@@ -21,12 +21,12 @@ Interpréter les résultats, leurs limites et les pistes
 d'amélioration.
 🗂️ Contenu du dépôt
 ``` text
-Portfolio_Analyse_Ventes_ML/
+Portfolio\_Analyse\_Ventes\_ML/
 ├── data/
 │   ├── transactions.csv
 │   ├── articles.csv
 │   └── acheteurs.csv
-├── Portfolio_Analyse_Ventes_ML.ipynb
+├── Portfolio\_Analyse\_Ventes\_ML.ipynb
 └── README.md
 ```
 Sources de données
@@ -113,7 +113,7 @@ Deux tâches ont été étudiées : la prédiction du chiffre d'affaires
 (régression) et l'identification des ventes élevées (classification).
 1. Régression : prédire le chiffre d'affaires
 La cible est le chiffre d'affaires d'une transaction. Les variables
-explicatives utilisées sont `quantite`, `cout_unitaire`, `prix_public`
+explicatives utilisées sont `quantite`, `cout\_unitaire`, `prix\_public`
 et `Age`.
 Les données ont été séparées en 96 observations d'entraînement et 24
 observations de test.
@@ -135,7 +135,7 @@ La quantité et les variables de prix sont les plus importantes dans ce
 modèle. Cette observation doit être lue à la lumière de la formule de
 calcul du chiffre d'affaires.
 2. Classification : identifier les ventes élevées
-La variable cible `vente_elevee` est définie à partir de la médiane du
+La variable cible `vente\_elevee` est définie à partir de la médiane du
 chiffre d'affaires :
 Vente élevée (1) : CA supérieur ou égal à 660 000.
 Vente non élevée (0) : CA inférieur à 660 000.
@@ -182,7 +182,7 @@ public. Ces variables sont également utilisées comme prédicteurs
 dans le modèle de régression : la relation mathématique directe peut
 rendre l'exercice de prédiction peu représentatif d'un scénario
 réel.
-La cible de classification `vente_elevee` est dérivée du chiffre
+La cible de classification `vente\_elevee` est dérivée du chiffre
 d'affaires, alors que la quantité et le prix public sont utilisés
 comme variables explicatives. Cette proximité entre les prédicteurs
 et la cible peut expliquer une partie des performances élevées et
